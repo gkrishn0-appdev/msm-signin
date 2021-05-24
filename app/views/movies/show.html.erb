@@ -3,7 +3,17 @@
     <h1>
       Movie #<%= @the_movie.id %> details
     </h1>
-
+    USER ID <% 
+    if (session[:user_id].present?)
+      %>
+      <button class="btn btn-block btn-outline-secondary">
+        Bookmark this movie!
+      </button>
+     <%
+    else
+      FALSE
+    end
+     %>
     <div>
       <div>
         <a href="/movies">

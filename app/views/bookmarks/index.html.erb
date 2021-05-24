@@ -93,10 +93,23 @@
             Show details
           </a>
         </td>
+         <td>
+          <a href="/delete_bookmark/<%= a_bookmark.id %>">
+            Un-bookmark
+          </a>
+        </td>
       </tr>
       <% end %>
     </table>
   </div>
 </div>
+<label for="cars">Choose a car:</label>
 
+
+<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
 <hr>
